@@ -42,7 +42,7 @@
 </h4>
 
 {#each allAnswers as answer}
-  <button on:click={() => checkQuestion(answer.correct)}>
+  <button disabled={isAnswered} on:click={() => checkQuestion(answer.correct)}>
     {@html answer.answer}
   </button>
 {/each}
