@@ -31,15 +31,24 @@
   }
 </script>
 
+<style>
+  h4 {
+    color: red;
+  }
+  h4.isCorrect {
+    color: green;
+  }
+</style>
+
 <h3>
   {@html question.question}
 </h3>
 
-<h4>
-  {#if isAnswered}
+{#if isAnswered}
+  <h4 class:isCorrect>
     {#if isCorrect}Correct 🎉{:else}Wrong 😬{/if}
-  {/if}
-</h4>
+  </h4>
+{/if}
 
 {#each allAnswers as answer}
   <button disabled={isAnswered} on:click={() => checkQuestion(answer.correct)}>
