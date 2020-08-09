@@ -2,10 +2,10 @@
   import { fade } from "svelte/transition";
   import Modal from "./Modal.svelte";
   import Question from "./Question.svelte";
+  import { score } from "./store.js";
 
   let quiz = getQuiz();
   let activeQuestion = 0;
-  let score = 0;
   let isModalOpen = false;
 
   async function getQuiz() {
@@ -22,17 +22,13 @@
 
   function resetQuiz() {
     isModalOpen = false;
-    score = 0;
+    score.set(0);
     quiz = getQuiz();
     activeQuestion = 0;
   }
 
-  function addToScore() {
-    score = score + 1;
-  }
-
   // Reactive statement
-  $: if (score > 0) {
+  $: if ($score > 4) {
     isModalOpen = true;
   }
 
@@ -50,7 +46,7 @@
 
 <div>
   <button on:click={resetQuiz}>Get new Questions</button>
-  <h3>Score: {score}</h3>
+  <h3>Score: {$score}</h3>
   <h4>Question #{questionNumber}</h4>
 
   {#await quiz}
@@ -59,7 +55,7 @@
     {#each data.results as question, index}
       {#if index === activeQuestion}
         <div transition:fade class="fade-wrapper">
-          <Question {question} {nextQuestion} {addToScore} />
+          <Question {question} {nextQuestion} />
         </div>
       {/if}
     {/each}
