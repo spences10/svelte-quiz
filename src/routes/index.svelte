@@ -1,6 +1,11 @@
 <script>
-  import Quiz from "$lib/quiz.svelte";
+  import Quiz from '$lib/quiz.svelte'
 </script>
+
+<main>
+  <h1>Svelte Quiz</h1>
+  <Quiz />
+</main>
 
 <style>
   main {
@@ -23,8 +28,3 @@
     }
   }
 </style>
-
-<main>
-  <h1>Svelte Quiz</h1>
-  <Quiz />
-</main>

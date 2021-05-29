@@ -1,45 +1,36 @@
 <script>
-  import { score } from "./store.js";
+  import { score } from './store.js'
 
-  export let question;
-  export let nextQuestion;
+  export let question
+  export let nextQuestion
 
-  let isCorrect;
-  let isAnswered = false;
+  let isCorrect
+  let isAnswered = false
 
-  let answers = question.incorrect_answers.map((answer) => {
+  let answers = question.incorrect_answers.map(answer => {
     return {
       answer,
       correct: false,
-    };
-  });
+    }
+  })
   let allAnswers = [
     ...answers,
     {
       answer: question.correct_answer,
       correct: true,
     },
-  ];
-  shuffle(allAnswers);
+  ]
+  shuffle(allAnswers)
   function shuffle(array) {
-    array.sort(() => Math.random() - 0.5);
+    array.sort(() => Math.random() - 0.5)
   }
 
   function checkQuestion(correct) {
-    isAnswered = true;
-    isCorrect = correct;
-    if (correct) score.update((currentValue) => currentValue + 1);
+    isAnswered = true
+    isCorrect = correct
+    if (correct) score.update(currentValue => currentValue + 1)
   }
 </script>
-
-<style>
-  h4 {
-    color: red;
-  }
-  h4.isCorrect {
-    color: green;
-  }
-</style>
 
 <h3>
   {@html question.question}
@@ -52,7 +43,10 @@
 {/if}
 
 {#each allAnswers as answer}
-  <button disabled={isAnswered} on:click={() => checkQuestion(answer.correct)}>
+  <button
+    disabled={isAnswered}
+    on:click={() => checkQuestion(answer.correct)}
+  >
     {@html answer.answer}
   </button>
 {/each}
@@ -62,3 +56,12 @@
     <button on:click={nextQuestion}>Next Question</button>
   </div>
 {/if}
+
+<style>
+  h4 {
+    color: red;
+  }
+  h4.isCorrect {
+    color: green;
+  }
+</style>
