@@ -1,7 +1,7 @@
 <script>
+  import Modal from "$lib/modal.svelte";
+  import Question from "$lib/question.svelte";
   import { fade } from "svelte/transition";
-  import Modal from "./Modal.svelte";
-  import Question from "./Question.svelte";
   import { score } from "./store.js";
 
   let quiz = getQuiz();

@@ -1,5 +1,5 @@
 <script>
-  import Quiz from "./Quiz.svelte";
+  import Quiz from "$lib/quiz.svelte";
 </script>
 
 <style>
