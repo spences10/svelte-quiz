@@ -1,7 +1,7 @@
 <script>
   import Modal from '$lib/modal.svelte'
   import Question from '$lib/question.svelte'
-  import { fade } from 'svelte/transition'
+  import { fade, fly } from 'svelte/transition'
   import { score } from './store.js'
 
   let quiz = getQuiz()
@@ -46,7 +46,11 @@
   {:then data}
     {#each data.results as question, index}
       {#if index === activeQuestion}
-        <div transition:fade class="fade-wrapper">
+        <div
+          out:fade
+          in:fly={{ y: 200, duration: 1000 }}
+          class="fade-wrapper"
+        >
           <Question {question} {nextQuestion} />
         </div>
       {/if}
