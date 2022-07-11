@@ -2,9 +2,9 @@
   "name": "svelte-quiz",
   "version": "2.0.0",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
@@ -16,7 +16,8 @@
     "eslint-plugin-svelte3": "4.0.0",
     "prettier": "2.7.1",
     "prettier-plugin-svelte": "2.7.0",
-    "svelte": "3.48.0"
+    "svelte": "3.49.0",
+    "vite": "^2.9.14"
   },
   "type": "module"
 }
