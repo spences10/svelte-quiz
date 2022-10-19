@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@sveltejs/adapter-vercel': 1.0.0-next.79
+  '@sveltejs/adapter-vercel': 1.0.0-next.80
   '@sveltejs/kit': next
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0
@@ -12,8 +12,8 @@ specifiers:
   vite: 3.1.7
 
 devDependencies:
-  '@sveltejs/adapter-vercel': 1.0.0-next.79
-  '@sveltejs/kit': 1.0.0-next.516_svelte@3.52.0+vite@3.1.7
+  '@sveltejs/adapter-vercel': 1.0.0-next.80
+  '@sveltejs/kit': 1.0.0-next.519_svelte@3.52.0+vite@3.1.7
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
   eslint-plugin-svelte3: 4.0.0_2h6d4ngklmojchucosx7yvuw7m
@@ -130,8 +130,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.79:
-    resolution: {integrity: sha512-Mitw34vS+wR/qxZm6qOUltf910N8gcekYZHaEVxO6HaE/9LyEZ/O03e9rRKwo4LAWrHXOkHMdUxvv1VcS9BqmQ==}
+  /@sveltejs/adapter-vercel/1.0.0-next.80:
+    resolution: {integrity: sha512-a1ibKgN5RsNw6HPzhNKrPuEndgYRXCYlGIioVzfKpt/tEr4RuV5o/bST2FBgjCIWCqajKhWg1QLZmN2DZfPy6Q==}
     dependencies:
       '@vercel/nft': 0.22.1
       esbuild: 0.15.10
@@ -140,8 +140,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.516_svelte@3.52.0+vite@3.1.7:
-    resolution: {integrity: sha512-n0oGcv7xpgJ81ld1oER5HVREP4TdeDUJ8S64XNDcl3Y2xfQLKk8C4SLYQw2D6V+DxUm8V3aRrj7N7/tm4CQm6A==}
+  /@sveltejs/kit/1.0.0-next.519_svelte@3.52.0+vite@3.1.7:
+    resolution: {integrity: sha512-Hlpee5iOcvfRPNxs641SNohhUGOx4ZQjM+QRJkv0sZpR897XougM7HSgp70eijacb0UbyPrx6inWKm/MZZSeow==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
