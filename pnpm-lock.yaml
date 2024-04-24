@@ -18,14 +18,14 @@ importers:
         specifier: ^3.0.0
         version: 3.1.0(svelte@4.2.12)(vite@5.2.10)
       eslint:
-        specifier: 9.1.0
-        version: 9.1.0
+        specifier: 9.1.1
+        version: 9.1.1
       eslint-config-prettier:
         specifier: 9.1.0
-        version: 9.1.0(eslint@9.1.0)
+        version: 9.1.0(eslint@9.1.1)
       eslint-plugin-svelte:
         specifier: ^2.35.1
-        version: 2.37.0(eslint@9.1.0)(svelte@4.2.12)
+        version: 2.37.0(eslint@9.1.1)(svelte@4.2.12)
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -581,8 +581,8 @@ packages:
     resolution: {integrity: sha512-OtIRv/2GyiF6o/d8K7MYKKbXrOUBIK6SfkIRM4Z0dY3w+LiQ0vy3F57m0Z71bjbyeiWFiHJ8brqnmE6H6/jEuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.1.0:
-    resolution: {integrity: sha512-1TCBecGFQtItia2o39P7Z4BK1X7ByNPxAiWJvwiyTGcOwYnTiiASgMpNA6a+beu8cFPhEDWvPf6mIlYUJv6sgA==}
+  eslint@9.1.1:
+    resolution: {integrity: sha512-b4cRQ0BeZcSEzPpY2PjFY70VbO32K7BStTGtBsnIGdTSEEQzBi8hPBcGQmTG2zUvFr9uLe0TK42bw8YszuHEqg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
 
@@ -1250,9 +1250,9 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.4.0(eslint@9.1.0)':
+  '@eslint-community/eslint-utils@4.4.0(eslint@9.1.1)':
     dependencies:
-      eslint: 9.1.0
+      eslint: 9.1.1
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.6.2': {}
@@ -1616,22 +1616,22 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-compat-utils@0.5.0(eslint@9.1.0):
+  eslint-compat-utils@0.5.0(eslint@9.1.1):
     dependencies:
-      eslint: 9.1.0
+      eslint: 9.1.1
       semver: 7.6.0
 
-  eslint-config-prettier@9.1.0(eslint@9.1.0):
+  eslint-config-prettier@9.1.0(eslint@9.1.1):
     dependencies:
-      eslint: 9.1.0
+      eslint: 9.1.1
 
-  eslint-plugin-svelte@2.37.0(eslint@9.1.0)(svelte@4.2.12):
+  eslint-plugin-svelte@2.37.0(eslint@9.1.1)(svelte@4.2.12):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
       '@jridgewell/sourcemap-codec': 1.4.15
       debug: 4.3.4
-      eslint: 9.1.0
-      eslint-compat-utils: 0.5.0(eslint@9.1.0)
+      eslint: 9.1.1
+      eslint-compat-utils: 0.5.0(eslint@9.1.1)
       esutils: 2.0.3
       known-css-properties: 0.30.0
       postcss: 8.4.38
@@ -1660,9 +1660,9 @@ snapshots:
 
   eslint-visitor-keys@4.0.0: {}
 
-  eslint@9.1.0:
+  eslint@9.1.1:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
       '@eslint-community/regexpp': 4.6.2
       '@eslint/eslintrc': 3.0.2
       '@eslint/js': 9.1.1
