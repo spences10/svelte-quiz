@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@sveltejs/adapter-vercel':
-    specifier: 5.4.3
-    version: 5.4.3(@sveltejs/kit@2.5.26)
+    specifier: 5.4.4
+    version: 5.4.4(@sveltejs/kit@2.5.26)
   '@sveltejs/kit':
     specifier: ^2.5.26
     version: 2.5.26(@sveltejs/vite-plugin-svelte@3.1.2)(svelte@4.2.19)(vite@5.4.3)
@@ -541,8 +541,8 @@ packages:
     dev: true
     optional: true
 
-  /@sveltejs/adapter-vercel@5.4.3(@sveltejs/kit@2.5.26):
-    resolution: {integrity: sha512-srZBkMpeaa7lflO1ZGdKTW3jWHscE9rdAkyxgRlVMVyugjcPOZ3dcpEfpoM4wtVCbpEOdHniWqQR9yL+zs4ybA==}
+  /@sveltejs/adapter-vercel@5.4.4(@sveltejs/kit@2.5.26):
+    resolution: {integrity: sha512-KORoxxqB2H5DrxpCHc9Yfijcgvmoaaz6G6eKHEg9fRlTsujJkxN26C0x4YlcgxqDU4dLIi1wfSLHpuZD0E4Irg==}
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
     dependencies:
