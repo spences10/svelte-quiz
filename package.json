@@ -9,7 +9,7 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-vercel": "5.4.4",
+    "@sveltejs/adapter-vercel": "5.4.5",
     "@sveltejs/kit": "^2.6.1",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "eslint": "9.12.0",
