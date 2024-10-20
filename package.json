@@ -10,15 +10,15 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "5.4.5",
-    "@sveltejs/kit": "^2.6.3",
+    "@sveltejs/kit": "^2.7.2",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
-    "eslint": "9.12.0",
+    "eslint": "9.13.0",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-svelte": "^2.44.1",
+    "eslint-plugin-svelte": "^2.45.1",
     "prettier": "3.3.3",
     "prettier-plugin-svelte": "3.2.7",
     "svelte": "4.2.19",
-    "vite": "5.4.8"
+    "vite": "5.4.9"
   },
   "type": "module"
 }
