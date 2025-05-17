@@ -1,11 +1,10 @@
 <script>
   import { score } from './store.js'
 
-  export let question
-  export let nextQuestion
+  let { question, nextQuestion } = $props();
 
-  let isCorrect
-  let isAnswered = false
+  let isCorrect = $state()
+  let isAnswered = $state(false)
 
   let answers = question.incorrect_answers.map(answer => {
     return {
@@ -45,7 +44,7 @@
 {#each allAnswers as answer}
   <button
     disabled={isAnswered}
-    on:click={() => checkQuestion(answer.correct)}
+    onclick={() => checkQuestion(answer.correct)}
   >
     {@html answer.answer}
   </button>
@@ -53,7 +52,7 @@
 
 {#if isAnswered}
   <div>
-    <button on:click={nextQuestion}>Next Question</button>
+    <button onclick={nextQuestion}>Next Question</button>
   </div>
 {/if}
 

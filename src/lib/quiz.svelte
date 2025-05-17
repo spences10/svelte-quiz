@@ -1,12 +1,14 @@
 <script>
+  import { run } from 'svelte/legacy';
+
   import Modal from '$lib/modal.svelte'
   import Question from '$lib/question.svelte'
   import { fade, fly } from 'svelte/transition'
   import { score } from './store.js'
 
-  let quiz = getQuiz()
-  let activeQuestion = 0
-  let isModalOpen = false
+  let quiz = $state(getQuiz())
+  let activeQuestion = $state(0)
+  let isModalOpen = $state(false)
 
   async function getQuiz() {
     const res = await fetch(
@@ -28,16 +30,18 @@
   }
 
   // Reactive statement
-  $: if ($score > 4) {
-    isModalOpen = true
-  }
+  run(() => {
+    if ($score > 4) {
+      isModalOpen = true
+    }
+  });
 
   // Reactive declaration
-  $: questionNumber = activeQuestion + 1
+  let questionNumber = $derived(activeQuestion + 1)
 </script>
 
 <div>
-  <button on:click={resetQuiz}>Get new Questions</button>
+  <button onclick={resetQuiz}>Get new Questions</button>
   <h3>Score: {$score}</h3>
   <h4>Question #{questionNumber}</h4>
 
@@ -62,7 +66,7 @@
   <Modal on:close={resetQuiz}>
     <h2>You Won! 🎉</h2>
     <p>Congrats!</p>
-    <button on:click={resetQuiz}>Start Over</button>
+    <button onclick={resetQuiz}>Start Over</button>
   </Modal>
 {/if}
 
