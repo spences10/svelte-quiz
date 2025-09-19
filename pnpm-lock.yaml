@@ -10,10 +10,10 @@ importers:
     devDependencies:
       '@sveltejs/adapter-vercel':
         specifier: 5.10.2
-        version: 5.10.2(@sveltejs/kit@2.33.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5))(rollup@4.34.9)
+        version: 5.10.2(@sveltejs/kit@2.42.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5))(rollup@4.34.9)
       '@sveltejs/kit':
         specifier: ^2.33.1
-        version: 2.33.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)
+        version: 2.42.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.1.0
         version: 5.1.0(svelte@5.38.2)(vite@6.3.5)
@@ -429,6 +429,9 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
+  '@jridgewell/sourcemap-codec@1.5.5':
+    resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
@@ -441,8 +444,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@polka/url@1.0.0-next.28':
-    resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
+  '@polka/url@1.0.0-next.29':
+    resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
   '@rollup/pluginutils@5.1.3':
     resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
@@ -561,8 +564,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
 
-  '@sveltejs/kit@2.33.1':
-    resolution: {integrity: sha512-q2jnchZAG3+DvaEB3/SDF4hqjWPhWE8HRuQPEp+6v2r9n0PpsFH+Ea0EJQPPzzlqlMRO6+t58INhbjshevHE8A==}
+  '@sveltejs/kit@2.42.2':
+    resolution: {integrity: sha512-FcNICFvlSYjPiAgk8BpqTEnXkaUj6I6wDwpQBxKMpsYhUc2Q5STgsVpXOG5LqwFpUAoLAXQ4wdWul7EcAG67JQ==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -734,8 +737,8 @@ packages:
     resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
     engines: {node: '>=8'}
 
-  devalue@5.1.1:
-    resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
+  devalue@5.3.2:
+    resolution: {integrity: sha512-UDsjUbpQn9kvm68slnrs+mfxwFkIflOhkanmyabZ8zOYk8SMEIbJ3TK+88g70hSIeytu4y18f0z/hYHMTrXIWw==}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -978,6 +981,9 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
+  magic-string@0.30.19:
+    resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
+
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
@@ -1002,8 +1008,8 @@ packages:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
-  mrmime@2.0.0:
-    resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
+  mrmime@2.0.1:
+    resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
     engines: {node: '>=10'}
 
   ms@2.1.3:
@@ -1165,8 +1171,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  sirv@3.0.0:
-    resolution: {integrity: sha512-BPwJGUeDaDCHihkORDchNyyTvWFhcusy1XMmhEVTQTwGeybFbp8YEmB+njbPnth1FibULBSBVwCQni25XlCUDg==}
+  sirv@3.0.2:
+    resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
     engines: {node: '>=18'}
 
   source-map-js@1.2.1:
@@ -1558,6 +1564,8 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
+  '@jridgewell/sourcemap-codec@1.5.5': {}
+
   '@jridgewell/trace-mapping@0.3.25':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
@@ -1579,7 +1587,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@polka/url@1.0.0-next.28': {}
+  '@polka/url@1.0.0-next.29': {}
 
   '@rollup/pluginutils@5.1.3(rollup@4.34.9)':
     dependencies:
@@ -1652,9 +1660,9 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-vercel@5.10.2(@sveltejs/kit@2.33.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5))(rollup@4.34.9)':
+  '@sveltejs/adapter-vercel@5.10.2(@sveltejs/kit@2.42.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5))(rollup@4.34.9)':
     dependencies:
-      '@sveltejs/kit': 2.33.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)
+      '@sveltejs/kit': 2.42.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)
       '@vercel/nft': 0.30.0(rollup@4.34.9)
       esbuild: 0.25.4
     transitivePeerDependencies:
@@ -1662,7 +1670,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@sveltejs/kit@2.33.1(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)':
+  '@sveltejs/kit@2.42.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.38.2)(vite@6.3.5))(svelte@5.38.2)(vite@6.3.5)':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.5(acorn@8.15.0)
@@ -1670,14 +1678,14 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.15.0
       cookie: 0.6.0
-      devalue: 5.1.1
+      devalue: 5.3.2
       esm-env: 1.2.2
       kleur: 4.1.5
-      magic-string: 0.30.17
-      mrmime: 2.0.0
+      magic-string: 0.30.19
+      mrmime: 2.0.1
       sade: 1.8.1
       set-cookie-parser: 2.7.1
-      sirv: 3.0.0
+      sirv: 3.0.2
       svelte: 5.38.2
       vite: 6.3.5
 
@@ -1823,7 +1831,7 @@ snapshots:
 
   detect-libc@2.0.1: {}
 
-  devalue@5.1.1: {}
+  devalue@5.3.2: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -2118,6 +2126,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  magic-string@0.30.19:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+
   minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.11
@@ -2137,7 +2149,7 @@ snapshots:
 
   mri@1.2.0: {}
 
-  mrmime@2.0.0: {}
+  mrmime@2.0.1: {}
 
   ms@2.1.3: {}
 
@@ -2277,10 +2289,10 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sirv@3.0.0:
+  sirv@3.0.2:
     dependencies:
-      '@polka/url': 1.0.0-next.28
-      mrmime: 2.0.0
+      '@polka/url': 1.0.0-next.29
+      mrmime: 2.0.1
       totalist: 3.0.1
 
   source-map-js@1.2.1: {}
